@@ -1,0 +1,265 @@
+/* Fixups */
+
+/** Avoid elements wider than screen on narrow screens (e.g., phones). */
+img
+{
+    display: inline-block;
+    max-width: 100%;
+}
+
+pre, code, sample
+{
+    white-space: pre-wrap;
+    hyphens: none;
+}
+
+table
+{
+    max-width: 100%;
+}
+
+/* Variables */
+
+:root {
+
+  /* Margin size for the content block inside the page. */
+  --content-margin: 2rem;
+
+  /* Used for <body> and all content blocks — very light lilac. */
+  --background-color: #fbf4fc;
+
+  /* Color for text in headers/footers and other elements 
+     with decorative darker backgrounds.
+     In this case it's white.
+   */
+  --decorative-text-color: #ffffff;
+
+  /* Color for links. */
+  --link-color: #7756d1; /* Lilac */
+
+  /* Color for decorative elements like horizontal rulers. */
+  --accent-color: #7756d1; /* Lilac */
+}
+
+/* Structural blocks */
+
+html
+{
+    background: var(--background-color);
+}
+
+body
+{
+    /* Limit the overall page width. */
+    max-width: 1000px;
+
+    /* This effectively automatically centers the actual page
+       on the screen if it's wider than max-width. */
+    margin: auto;
+    box-sizing: border-box;
+
+    /* Make the page always fill the screen,
+       so that the footer doesn't end up "hanging mid-air" */
+    min-height: 100vh;
+
+    /* Display the page blocks as a column. */
+    display: flex;
+    flex-direction: column;
+}
+
+/** The header.
+    Currently it only contains the navigation menu. */
+header
+{
+    padding-left: var(--content-margin);
+    padding-right: var(--content-margin);
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+
+    /* Lilac gradient, rounded cornerns, and a gray shadow. */
+    border-bottom-width: 0px;
+    border-radius: 0px 0px 20px 20px;
+    background: linear-gradient(to bottom, #c38ce5, 30%, #7756d1);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 2px, rgba(0, 0, 0, 0.0) 0px 5px 5px;
+
+    /* Ensure that the header is always visible at the top of the page
+       and isn't hidden when the visitor scrolls down. */
+    top: 0;
+    position: sticky;
+    z-index: 999;
+
+    /* Ensure there's always some distance between the header and the page content. */
+    margin-bottom: 20px;
+
+}
+
+/*** The navigation menu. */
+
+nav
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/**** Containers for menu links, for distributing them around the menu block neatly. */
+nav div.menu-link 
+{
+    /* Spread navigation menu links more evenly.
+       If you add more links, you may want to make it smaller than 15%.
+       If's also safe to remove this completely — matter of taste.
+     */
+    min-width: 15%;
+    box-sizing: border-box;
+
+    /* Prevent links from getting clumped together on narrow screens. */
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    /* Center the link text inside the block. */
+    text-align: center;
+}
+
+/**** Navigation menu link styling. */
+nav a { 
+    color: var(--decorative-text-color);
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+/**** Styling for the link to the page where the visitor currently is.
+   It's not underlined and is surrounded by eights note symbols instead.
+ */
+a.nav-active { 
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a.nav-active:before {
+    content: "♪ "; 
+}
+
+a.nav-active:after { 
+    content: " ♪"; 
+}
+
+/** The main content block. */
+main
+{
+    margin-left: var(--content-margin);
+    margin-right: var(--content-margin); 
+
+    /* Make the content block take up all available vertical space
+       and push the footer down. */
+    flex-grow: 1;
+}
+
+/** The footer. */
+
+footer
+{
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+
+    color: var(--decorative-text-color);
+
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-top: 1rem;
+
+    /* Lilac background, rounded upper corners gray shadow. */ 
+    border-top-width: 2px;
+    border-radius: 20px 20px 0px 0px;
+    background: #7756d1;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px -5px 2px, rgba(0, 0, 0, 0.0) 0px -5px 5px;
+
+    /* Ensure that the footer is at the bottom of the page. */
+    position:sticky;
+    bottom: 0;
+    width: 100%;
+
+    /* Ensure that the footer is always visible and the content scrolls below it. */
+    z-index: 999;
+}
+
+/* The main page. */
+
+/** The main page photo. */
+div.main-page-photo {
+   box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+   border: 1px;
+   border-radius: 5px;
+   margin-left: 2rem;
+   padding: 5px;
+   text-align: center;
+
+   /* Display the picture inside the flow of text. */
+   display: inline-block;
+
+   max-width: 40%;
+   float: right;
+}
+
+/* The photo gallery. */
+
+div#gallery
+{
+    text-align: center;
+}
+
+
+div.gallery-photo {
+   box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+   border: 1px;
+   border-radius: 5px;
+   padding: 5px;
+   text-align: center;
+   display: inline-block;
+   margin-bottom: 15px;
+}
+
+
+/* ToC styles */
+
+ul.toc { list-style: none; }
+
+/* Footnote styles */
+
+a.footnote
+{
+    text-decoration: none;
+    margin-right: 0.4rem;
+}
+
+hr
+{
+    border: 0 none;
+    color: var(--accent-color);
+    background-color: currentColor;
+    height: 2px;
+    width: 50%;
+}
+
+div.youtube-video
+{
+    margin-botton: 1rem;
+}
+
+/* Typography */
+
+@supports (hyphens: auto)
+{
+    main
+    {
+        text-align: justify;
+        hyphens: auto;
+    }
+}
+
+body
+{
+    font-family: system-ui, sans-serif;
+    font-weight: 400;
+}
