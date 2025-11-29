@@ -1,0 +1,74 @@
+#
+# [[gigs]
+#   # Gig dates must follow this format: YYYY-MM-DD, like 2024-01-31
+#   # Dates are used for splitting the list into upcoming and past gigs,
+#   # and for sorting those lists
+#   # (upcoming gigs from sooner to later, past gigs from more recent to more distant)
+#   # It's a required field.
+#   date = 1970-01-01
+#
+#   # Gig time must be a quoted string
+#   # It's not used in any way internally, can be anything like "21:00" or "9pm"
+#   time = "9pm"
+#
+#   # Location is required, can be any quoted string
+#   location = "USA, New York"
+#
+#   # Venue is optional, but it's a good idea to add it
+#   venue = "Carnegie Hall"
+#
+#   # If the event is ticketed, you can provide a link for ticket booking
+#   ticket_link = "https://tickets.example.com/events/my-event"
+#
+#   # Description is optional, but nice to have
+#   description = '''
+#     This is going to be the coolest concert ever.
+#   '''
+
+[[gigs]]
+  date = 2026-03-04
+  venue = "The Music Village"
+  location = "Brussels"
+  description = "Muse Echoes"
+
+[[gigs]]
+  date = 2025-12-23
+  venue = "Theatre Marni"
+  location = "Brussels"
+  description = "Araponga"
+
+[[gigs]]
+  date = 2025-12-05
+  venue = "Boom Cafe"
+  location = "Brussels"
+  description = "Clement Cerovecki and Lucy Tasker"
+
+[[gigs]]
+  date = 2025-11-28
+  venue = "The Jamboree"
+  location = "London"
+  description = "Raka Balkan Band"
+
+[[gigs]]
+  date = 2025-11-13
+  location = "Brussels"
+  venue = "Sounds"
+  description = "Mingus Minga Mingus"
+
+[[gigs]]
+  date = 2025-10-29
+  venue = "World Culture Festival"
+  location = "Karachi, Pakistan"
+  description = "October the 29th to November the 3rd"
+
+[[gigs]]
+  date = 2025-10-26
+  location = "Brussels"
+  venue = "Roskam"
+  description = "Mingus Minga Mingum"
+
+[[gigs]]
+  date = 2025-10-12
+  location = "Charleroi"
+  venue = "Palais des Beaux Arts"
+  description = "Araponga"

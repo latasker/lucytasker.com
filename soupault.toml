@@ -1,5 +1,5 @@
 
-# To learn about configuring soupault, visit https://www.soupault.app/reference-manual
+# To learn about configuring soupault, visit https://www.soupault.net/reference-manual
 
 [settings]
   # Soupault version that the config was written/generated for
@@ -160,3 +160,63 @@
   gallery_dir = "gallery"
   target_dir = "photos"
   image_format = "webp"
+
+[widgets.gig_dates]
+  widget = "gigs"
+  #disabled = true
+  selector = "#gigs"
+  data_file = "gigs.toml"
+  template = '''
+{# This template gets two variables from the plugin: upcoming_gigs and past_gigs #}
+
+{# Variables outside of namespaces are immutable,
+   so we create a "state" namespace
+   to use as a "scratch register".
+ #}
+{% set state = namespace(date="") %}
+
+{% if upcoming_gigs %}
+  <h2>Upcoming</h2>
+  {% for gig in upcoming_gigs %}
+    {% if gig.time %}
+    {%   set state.date = gig.date + ", " +  gig.time %}
+    {% else %}
+    {%   set state.date = gig.date %}
+    {% endif %}
+
+    {# Most gigs should have a venue #}
+    {% if gig.venue %}
+    <h3>{{state.date}} — {{gig.venue}} ({{gig.location}})</h2>
+    {% else %}
+    {# But some, like private events, may not have it, so we need to account for the case when it's missing. #}
+    <h3>{{gig.location}}</h3>
+    {% endif %}
+
+    {% if gig.ticket_link %}
+    <p><a href="{{gig.ticket_link}}">Book tickets</a></p>
+    {% endif -%}
+    <p>
+    {{gig.description}}
+    </p>
+  {% endfor -%}
+{% endif %}
+
+{% if past_gigs %}
+  <h2>Past</h2>
+
+  {% for gig in past_gigs %}
+    {% if gig.time %}
+    {% set state.date = gig.date + ", " +  gig.time %}
+    {% else %}
+    {% set state.date = gig.date %}
+    {% endif %}
+
+    {# Time is useless for past gigs, so we only include the date in their titles #}
+    {% if gig.venue %}
+    <h3>{{gig.date}} — {{gig.venue}} ({{gig.location}})</h2>
+    {% else %}
+    <h3>{{gig.date}} — {{gig.location}}</h3>
+    {% endif %}
+  {% endfor %}
+{% endif %}
+'''
