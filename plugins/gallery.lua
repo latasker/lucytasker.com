@@ -37,10 +37,10 @@ function create_gallery_entry(source_file)
   if image_format then
     Log.debug(format("Processing image file %s", source_file))
     source_file_base = Sys.strip_extensions(Sys.basename(source_file))
-    Log.debug(format("Running conversion command: magick '%s' '%s/%s.%s'",
+    Log.debug(format("Running conversion command: convert '%s' '%s/%s.%s'",
                        source_file, Sys.join_path(build_dir, target_dir),
     source_file_base, image_format))
-    Sys.run_program(format("magick '%s' '%s/%s.%s'",
+    Sys.run_program(format("convert '%s' '%s/%s.%s'",
                               source_file, Sys.join_path(build_dir, target_dir),
       source_file_base, image_format))
   end
