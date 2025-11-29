@@ -1,0 +1,69 @@
+name: Website update
+
+# Controls when the workflow will run
+on:
+  # Run the build workflow when new changes are pushed to the main branch
+  push:
+    branches: [ main ]
+  # Also run it every night to keep the /concerts page up to date,
+  # since it's generated from a data file               
+  # and creates lists of upcoming and past gigs based on their dates
+  schedule:
+    - cron: "0 3 * * *"
+  # Allow running the workflow manually —
+  # useful for rebuilds after configuration changes or errors
+  workflow_dispatch:
+
+# Workflow steps
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+    - uses: actions/checkout@v4
+
+    - name: Install build dependencies from the repos
+      run: |
+        echo Installing build dependencies
+        sudo apt-get update
+        sudo apt-get -y install make imagemagick
+
+    - name: Install soupault
+      env:
+        SOUPAULT_VERSION: 5.2.0
+      run: |
+        echo Downloading and unpacking soupault
+        wget https://github.com/PataphysicalSociety/soupault/releases/download/$SOUPAULT_VERSION/soupault-$SOUPAULT_VERSION-linux-x86_64.tar.gz
+        tar xvf soupault-$SOUPAULT_VERSION-linux-x86_64.tar.gz
+        sudo mv -v ./soupault-$SOUPAULT_VERSION-linux-x86_64/soupault /usr/bin/
+
+    - name: Build the website
+      run: |
+        make all
+
+    - name: Deploy to GitHub Pages
+      env:
+        DEPLOY_TOKEN: ${{ secrets.DEPLOY_TOKEN }}
+      run: |
+        # Save the source commit hash
+        # to use in the GitHub Pages repository commit message
+        echo "SRC_COMMIT=$(git log --pretty=format:'%h' -n 1)" >> $GITHUB_ENV
+
+        # Create a git repository in build/
+        # since deployment to GitHub Pages is done by pushing to a branch
+        cd build/
+
+        git init --initial-branch main
+        git config user.name "GitHub Actions"
+        git config user.email "build@localhost"
+        git remote add origin https://$DEPLOY_TOKEN@github.com/latasker/latasker.github.io
+
+        # Commit generated files to the repository
+        git add *
+        git commit --message "Deploy from commit ${{ env.SRC_COMMIT }}"
+
+        # Overwrite the old version completely
+        # to avoid storing multiple versions of images
+        # and prevent the useless git history from taking up too much space
+        git push --force origin main
