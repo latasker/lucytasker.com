@@ -45,25 +45,41 @@ jobs:
     - name: Deploy to GitHub Pages
       env:
         DEPLOY_TOKEN: ${{ secrets.DEPLOY_TOKEN }}
+        DEPLOY_REPO: github.com/latasker/latasker.github.io
+        BLANK_BRANCH: blank
       run: |
         # Save the source commit hash
         # to use in the GitHub Pages repository commit message
         echo "SRC_COMMIT=$(git log --pretty=format:'%h' -n 1)" >> $GITHUB_ENV
 
-        # Create a git repository in build/
-        # since deployment to GitHub Pages is done by pushing to a branch
-        cd build/
+        # Clone the repository used for GitHub Pages hosting
+        git clone https://$DEPLOY_TOKEN@$DEPLOY_REPO ghp_repo
+        cd ghp_repo
 
-        git init --initial-branch main
+        # Set the commit author to a fake user
         git config user.name "GitHub Actions"
         git config user.email "build@localhost"
-        git remote add origin https://$DEPLOY_TOKEN@github.com/latasker/latasker.github.io
+
+        # Fetch the blank branch
+        # that contains a README and a CNAME file for custom domain settings
+        # We will use it as a starting point for a fresh deployment
+        git fetch origin $BLANK_BRANCH
+        git checkout $BLANK_BRANCH
+
+        # Clear the main branch
+        git branch -D main
+        git branch main
+        git checkout main
+
+        # Copy all files from the build directory
+        cp -r ../build/* .
 
         # Commit generated files to the repository
         git add *
         git commit --message "Deploy from commit ${{ env.SRC_COMMIT }}"
 
         # Overwrite the old version completely
-        # to avoid storing multiple versions of images
-        # and prevent the useless git history from taking up too much space
+        # to avoid storing multiple versions of images,
+        # ensure deleted pages (if any) are deleted from the live website,
+        # and to prevent the useless git history from taking up too much space
         git push --force origin main
