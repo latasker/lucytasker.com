@@ -1,3 +1,12 @@
+# This is the data file for the /concerts page
+#
+# Entries are automatically split into upcoming and past events
+# based on the `date` field.
+#
+# They are also automatically sorted by date
+# so there's no need to order them by hand.
+#
+# The entry format is as follows:
 #
 # [[gigs]
 #   # Gig dates must follow this format: YYYY-MM-DD, like 2024-01-31
@@ -26,7 +35,7 @@
 #   '''
 
 [[gigs]]
- date = 2026-01-15
+ date = "15/01/2026"
  venue = "L'ambassade, Habitat Groupé" 
  location = "Brussels" 
  description = "Triple Ale" 

@@ -163,9 +163,20 @@
 
 [widgets.gig_dates]
   widget = "gigs"
-  #disabled = true
   selector = "#gigs"
+
   data_file = "gigs.toml"
+  key = "gigs"
+
+  # Supported formats for event dates in the date file
+  date_formats = ["%Y-%m-%d", "%d/%m/%Y"]
+
+  # Date format for displaying events on the page
+  date_display_format = "%Y-%m-%d"
+
+  # Maximum number of past gigs to display
+  past_events_limit = 20
+
   template = '''
 {# This template gets two variables from the plugin: upcoming_gigs and past_gigs #}
 
@@ -175,20 +186,21 @@
  #}
 {% set state = namespace(date="") %}
 
-{% if upcoming_gigs %}
+{% if upcoming_events %}
   <h2>Upcoming</h2>
-  {% for gig in upcoming_gigs %}
+  {% for gig in upcoming_events %}
     {% if gig.time %}
     {%   set state.date = gig.date + ", " +  gig.time %}
     {% else %}
     {%   set state.date = gig.date %}
     {% endif %}
 
-    {# Most gigs should have a venue #}
+    {# Most gigs have a venue #}
     {% if gig.venue %}
     <h3>{{state.date}} — {{gig.venue}} ({{gig.location}})</h2>
     {% else %}
-    {# But some, like private events, may not have it, so we need to account for the case when it's missing. #}
+    {# But some, like private events, may not have it,
+       so we need to account for the case when it's missing. #}
     <h3>{{gig.location}}</h3>
     {% endif %}
 
@@ -201,10 +213,10 @@
   {% endfor -%}
 {% endif %}
 
-{% if past_gigs %}
+{% if past_events %}
   <h2>Past</h2>
 
-  {% for gig in past_gigs %}
+  {% for gig in past_events %}
     {% if gig.time %}
     {% set state.date = gig.date + ", " +  gig.time %}
     {% else %}
