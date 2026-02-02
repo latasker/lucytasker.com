@@ -35,6 +35,12 @@
 #   '''
 
 [[gigs]]
+ date = "22/02/2026"
+ venue = "Elzenhof" 
+ location = "Brussels" 
+ description = "Lucy Tasker and Clément Cerovecki" 
+
+[[gigs]]
  date = "15/01/2026"
  venue = "L'ambassade, Habitat Groupé" 
  location = "Brussels" 
