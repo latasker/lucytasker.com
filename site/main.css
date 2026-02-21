@@ -98,7 +98,7 @@ header
 nav
 {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
@@ -109,7 +109,6 @@ nav div.menu-link
        If you add more links, you may want to make it smaller than 15%.
        If's also safe to remove this completely — matter of taste.
      */
-    min-width: 15%;
     box-sizing: border-box;
 
     /* Prevent links from getting clumped together on narrow screens. */
