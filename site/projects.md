@@ -1,6 +1,6 @@
 Browse Lucy's present and past projects/collaborations here: 
 
-Raka Band (Balkan Music) https://www.youtube.com/watch?v=xFRCfKUk8IM&list=RDxFRCfKUk8IM&start_radio=1 
+Raka Band (Balkan Music) [https://www.youtube.com/watch?v=xFRCfKUk8IM&list=RDxFRCfKUk8IM&start_radio=1 ](url)
 Namlo (Nepalese influence) https://www.youtube.com/watch?v=bEkkmyhkJSM&list=RDbEkkmyhkJSM&start_radio=1
 Mudita (Indian styles/influence) https://www.youtube.com/watch?v=TottX0kxuzI&list=RDTottX0kxuzI&start_radio=1
 Muse Echoes (Women-led jazz ensemble) https://www.youtube.com/watch?v=pN26jj7SHtU&list=RDpN26jj7SHtU&start_radio=1
