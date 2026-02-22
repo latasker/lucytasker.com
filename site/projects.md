@@ -9,4 +9,4 @@ Browse Lucy's present and past projects/collaborations here:
 * [The Rigmarollers](https://therigmarollers.bandcamp.com/album/21st-century-speakeasy) (featured on tracks 4, 8, 10)
 * [Lucy's improvised sounds](https://www.youtube.com/watch?v=LZW0RkE1Pc0&list=RDLZW0RkE1Pc0&start_radio=1)
 * [Sister Georges (Brassens in Jazz)](https://www.youtube.com/watch?v=oYPlN2gFvC0)
-* [Faarjam Saidi](https://www.youtube.com/watch?v=xFRCfKUk8IM&list=RDxFRCfKUk8IM&start_radio=1](https://www.youtube.com/watch?v=_Wh03GtU7jE&list=RD_Wh03GtU7jE&start_radio=1) (Collaboration with Faarjam Saidi, Iranian artist)
+* [Faarjam Saidi](https://www.youtube.com/watch?v=xFRCfKUk8IM&list=RDxFRCfKUk8IM&start_radio=1) (Collaboration with Faarjam Saidi, Iranian artist)
