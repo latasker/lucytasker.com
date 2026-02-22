@@ -1,6 +1,6 @@
 Browse Lucy's present and past projects/collaborations here: 
 
-* [Lucy Tasker and Clément Cerovecki] (https://clemandlucy.bandcamp.com/album/valise) (Sounds inspired by Eastern Europe)
+* [Lucy Tasker and Clément Cerovecki](https://clemandlucy.bandcamp.com/album/valise) (Sounds inspired by Eastern Europe)
 * [Raka Band](https://www.youtube.com/watch?v=xFRCfKUk8IM&list=RDxFRCfKUk8IM&start_radio=1) (Balkan Music)
 * [Namlo](https://www.youtube.com/watch?v=bEkkmyhkJSM&list=RDbEkkmyhkJSM&start_radio=1) (Nepalese influence)
 * [Mudita](https://www.youtube.com/watch?v=TottX0kxuzI&list=RDTottX0kxuzI&start_radio=1) (Indian styles/influence)
