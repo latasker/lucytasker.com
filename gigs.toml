@@ -41,6 +41,24 @@
  description = "Lucy Tasker Trio" 
 
 [[gigs]]
+ date = "12/04/2026"
+ venue = "Chez Franz" 
+ location = "Brussels" 
+ description = "Natasha Vew & Lucy Tasker" 
+
+ [[gigs]]
+ date = "29/03/2026"
+ venue = "La maison qui chante" 
+ location = "Brussels" 
+ description = "Araponga" 
+
+ [[gigs]]
+ date = "04/03/2026"
+ venue = "The Music Village" 
+ location = "Brussels" 
+ description = "Muse Echoes" 
+
+[[gigs]]
  date = "22/02/2026"
  venue = "Elzenhof" 
  location = "Brussels" 
