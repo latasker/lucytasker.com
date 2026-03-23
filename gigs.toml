@@ -59,6 +59,12 @@
  description = "Muse Echoes" 
 
 [[gigs]]
+ date = "16/03/2026"
+ venue = "Ampitheatre de Saint-Renan" 
+ location = "Saint-Renand" 
+ description = "Araponga" 
+ 
+[[gigs]]
  date = "22/02/2026"
  venue = "Elzenhof" 
  location = "Brussels" 
