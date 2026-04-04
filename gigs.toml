@@ -35,6 +35,18 @@
 #   '''
 
 [[gigs]]
+ date = "22/05/2026"
+ venue = "Roskam" 
+ location = "Brussels" 
+ description = "Mingus Minga Mingum"
+
+[[gigs]]
+ date = "13/05/2026"
+ venue = "Brussels- Etterbeek" 
+ location = "Brussels" 
+ description = "Festival Unicorn"
+ 
+[[gigs]]
  date = "25/04/2026"
  venue = "The Green Note" 
  location = "London" 
