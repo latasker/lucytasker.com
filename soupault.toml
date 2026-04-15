@@ -101,6 +101,28 @@
   # the default encoding is UTF-8
   page_character_encoding = "utf-8"
 
+# Inline plugins
+[plugins.copyright-year]
+  lua_source = '''
+copyright_year_span = HTML.select_one(page, "#copyright-year")
+HTML.replace_content(copyright_year_span,
+  HTML.create_text(Plugin.get_global_data("copyright_year")))
+'''
+
+# Hooks are executed at different points of the page processing workflow
+# to perform auxiliary functions
+
+# Gets the year when anything in the website was last modified
+# from the git commit history
+# and stores it in the global data table
+# for the "copyright_year" widget to use
+[hooks.startup]
+  lua_source = '''
+global_data = {}
+git_last_change_year = Sys.get_program_output("git log -n 1 --pretty=%ad --date=format:%Y")
+global_data["copyright_year"] = String.trim(git_last_change_year)
+'''
+
 # Pages can be further processed with "widgets"
 
 # Takes the content of the first <h1> and inserts it into the <title>
@@ -120,6 +142,11 @@
   widget = "insert_html"
   html = '<meta name="generator" content="soupault">'
   selector = "head"
+
+# Inserts the copyright year into every page
+# The year is taken from the git history by the startup hook
+[widgets.copyright-year]
+  widget = "copyright-year"
 
 # Marks the link to the currently viewed page in the navigation menu
 [widgets.highlight-active-link]
