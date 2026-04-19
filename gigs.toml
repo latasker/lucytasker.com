@@ -45,6 +45,12 @@
  venue = "Brussels- Etterbeek" 
  location = "Brussels" 
  description = "Festival Unicorn"
+
+ [[gigs]]
+ date = "06/05/2026"
+ venue = "Tussen" 
+ location = "Brussels" 
+ description = "With Manouchedrome" 
  
 [[gigs]]
  date = "25/04/2026"
