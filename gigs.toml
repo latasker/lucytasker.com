@@ -40,6 +40,12 @@
  location = "Brussels" 
  description = "Small Band, Big Ideas "
 
+ [[gigs]]
+ date = "11/06/2026"
+ venue = "L'intervalle Bar" 
+ location = "Lille" 
+ description = "Tribute to Theolonius Monk "
+
 [[gigs]]
  date = "22/05/2026"
  venue = "Roskam" 
