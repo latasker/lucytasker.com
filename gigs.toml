@@ -35,6 +35,12 @@
 #   '''
 
 [[gigs]]
+ date = "11/06/2026"
+ venue = "The Jazz Station" 
+ location = "Brussels" 
+ description = "Small Band, Big Ideas "
+
+[[gigs]]
  date = "22/05/2026"
  venue = "Roskam" 
  location = "Brussels" 
@@ -45,6 +51,12 @@
  venue = "Brussels- Etterbeek" 
  location = "Brussels" 
  description = "Festival Unicorn"
+
+ [[gigs]]
+ date = "08/05/2026"
+ venue = "Brussels- The Jazz Station" 
+ location = "Brussels" 
+ description = "Small Band Big Ideas"
 
  [[gigs]]
  date = "06/05/2026"
