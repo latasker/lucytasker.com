@@ -134,7 +134,6 @@ Table.iter_values(add_event_timestamp, events)
 
 function set_date(event)
   if date_display_format then
-    Log.debug("Reformatting")
     event["date"] = Date.reformat(event["date"], date_formats, date_display_format)
   end
 end
