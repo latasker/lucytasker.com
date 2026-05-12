@@ -187,6 +187,7 @@ global_data["copyright_year"] = String.trim(git_last_change_year)
   gallery_dir = "gallery"
   target_dir = "photos"
   image_format = "webp"
+  preview_width = "1000"
 
 [widgets.gig_dates]
   widget = "gigs"

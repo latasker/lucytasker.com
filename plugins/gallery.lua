@@ -2,6 +2,7 @@ gallery_dir = config["gallery_dir"]
 target_dir = config["target_dir"]
 image_format = config["image_format"]
 gallery_selector = config["selector"]
+preview_width = config["preview_width"]
 
 img_tmpl = [[
 <div class="gallery-photo">
@@ -37,12 +38,15 @@ function create_gallery_entry(source_file)
   if image_format then
     Log.debug(format("Processing image file %s", source_file))
     source_file_base = Sys.strip_extensions(Sys.basename(source_file))
-    Log.debug(format("Running conversion command: convert '%s' '%s/%s.%s'",
-                       source_file, Sys.join_path(build_dir, target_dir),
-    source_file_base, image_format))
-    Sys.run_program(format("convert '%s' '%s/%s.%s'",
-                              source_file, Sys.join_path(build_dir, target_dir),
-      source_file_base, image_format))
+    resize_option = ""
+    if config["preview_width"] then
+      resize_option = format("-resize %s", config["preview_width"])
+    end
+    command = format("convert %s '%s' '%s/%s.%s'",
+                     resize_option, source_file, Sys.join_path(build_dir, target_dir),
+                     source_file_base, image_format)
+    Log.debug(format("Running conversion command: %s", command))
+    Sys.run_program(command)
   end
 
   target_file = format("/%s/%s.%s", target_dir, source_file_base, image_format)
