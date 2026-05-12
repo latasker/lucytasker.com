@@ -14,6 +14,24 @@ gallery_elem = HTML.select_one(page, gallery_selector)
 
 image_files = Sys.list_dir(gallery_dir)
 
+function get_file_timestamp(file)
+  if Regex.match(file, "^\\d{4}-\\d{2}-\\d{2}.*") then
+    Log.debug(format("File name %s contains a full YYYY-MM-DD timestamp", file))
+    date = String.truncate_ascii(file, 10)
+    return Date.to_timestamp(date, {"%Y-%m-%d"})
+  end
+
+  if Regex.match(file, "^\\d{4}.*") then
+    Log.debug(format("File name %s contains a year, assuming YYYY-01-01", file))
+    date = String.truncate_ascii(file, 4)
+    return Date.to_timestamp(date, {"%Y"})
+  end
+
+  -- If all else failed
+  Log.warning(format("File name %s does not start with a YYYY-MM-DD date or a year prefix", file))
+  return 0
+end
+
 -- Assume that all photos have names that start with a year,
 -- like "YYYY some description"
 function compare_photo_years(l, r)
@@ -22,13 +40,11 @@ function compare_photo_years(l, r)
 
   Log.debug(format("Comparing the dates of files: %s, %s", l_file, r_file))
 
-  l_year = String.truncate_ascii(l_file, 4)
-  r_year = String.truncate_ascii(r_file, 4)
+  l_timestamp = get_file_timestamp(l_file)
+  r_timestamp =	get_file_timestamp(r_file)
 
-  Log.debug(format("%s, %s", l_year, r_year))
-
-  if l_year > r_year then return -1 end
-  if l_year < r_year then return 1 end
+  if l_timestamp > r_timestamp then return -1 end
+  if l_timestamp < r_timestamp then return 1 end
   return 0
 end
 
