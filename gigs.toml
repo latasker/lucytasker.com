@@ -34,14 +34,8 @@
 #     This is going to be the coolest concert ever.
 #   '''
 
-[[gigs]]
- date = "11/06/2026"
- venue = "The Jazz Station" 
- location = "Brussels" 
- description = "Small Band, Big Ideas "
-
  [[gigs]]
- date = "11/06/2026"
+ date = "29/05/2026"
  venue = "L'intervalle Bar" 
  location = "Lille" 
  description = "Tribute to Theolonius Monk "
