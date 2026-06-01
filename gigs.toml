@@ -34,6 +34,30 @@
 #     This is going to be the coolest concert ever.
 #   '''
 
+[[gigs]]
+ date = "27/06/2026"
+ venue = "TBC" 
+ location = "Hennuyeres" 
+ description = "Sigma @ Solstice Festival"
+
+[[gigs]]
+ date = "26/06/2026"
+ venue = "Vieille Chechette" 
+ location = "Brussels" 
+ description = "Lucy Tasker and Clément Cerovecki"
+ 
+[[gigs]]
+ date = "22/06/2026"
+ venue = "Musical Instrument Museum" 
+ location = "Brussels" 
+ description = "HU XL (Karen Van Schaik)"
+ 
+[[gigs]]
+ date = "21/06/2026"
+ venue = "Neufchateau, Belgium" 
+ location = "Neufchateau" 
+ description = "Fete de la Musique "
+ 
  [[gigs]]
  date = "29/05/2026"
  venue = "L'intervalle Bar" 
