@@ -257,6 +257,9 @@ global_data["copyright_year"] = String.trim(git_last_change_year)
     {% else %}
     <h3>{{gig.date}} — {{gig.location}}</h3>
     {% endif %}
+    <p>
+    {{gig.description}}
+    </p>
   {% endfor %}
 {% endif %}
 '''
