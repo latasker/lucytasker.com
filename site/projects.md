@@ -16,6 +16,8 @@ Recording collabs:
 * [Siwan Catherine](https://siwancatrin.bandcamp.com/album/possibility) (Recording on Siwan's debut album) 
 * [The Rigmarollers](https://therigmarollers.bandcamp.com/album/21st-century-speakeasy) (featured on tracks 4, 8, 10)
 * [For Breakfast](https://forbreakfast.bandcamp.com/album/longer-than-spring) (For Breakfast Band)
+* [Gilles Snowcat](https://www.youtube.com/watch?v=POZdUCJsfOg) 
 
 TV:
 * [Dream of Europe](https://www.youtube.com/watch?v=iRnvrYf8xAQ) (London Part 1 At Abbey Road Studios) 
+* [BX1 TV]([https://www.youtube.com/watch?v=iRnvrYf8xAQ](https://bx1.be/emission/bpm-avec-average-triple-ale-gut-model-et-ghinzu/?sfnsn=scwspmo&fbclid=IwY2xjawSbVW5leHRuA2FlbQIxMQBzcnRjBmFwcF9pZBAyMjIwMzkxNzg4MjAwODkyAAEeUiIqsq3KlldtpCBuGgq0suSiS_fXqekWiX-1VCenKP41ADT7E7ifxciyGC0_aem_LN5ZLCzOA2IJ_FRyAQFfYA)) (Triple Ale) 
