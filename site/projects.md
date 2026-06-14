@@ -20,4 +20,4 @@ Recording collabs:
 
 TV:
 * [Dream of Europe](https://www.youtube.com/watch?v=iRnvrYf8xAQ) (London Part 1 At Abbey Road Studios) 
-* [BX1 TV]([https://www.youtube.com/watch?v=iRnvrYf8xAQ](https://bx1.be/emission/bpm-avec-average-triple-ale-gut-model-et-ghinzu/?sfnsn=scwspmo&fbclid=IwY2xjawSbVW5leHRuA2FlbQIxMQBzcnRjBmFwcF9pZBAyMjIwMzkxNzg4MjAwODkyAAEeUiIqsq3KlldtpCBuGgq0suSiS_fXqekWiX-1VCenKP41ADT7E7ifxciyGC0_aem_LN5ZLCzOA2IJ_FRyAQFfYA)) (Triple Ale) 
+* [BX1 TV](https://www.youtube.com/watch?v=iRnvrYf8xAQ](https://bx1.be/emission/bpm-avec-average-triple-ale-gut-model-et-ghinzu/?sfnsn=scwspmo&fbclid=IwY2xjawSbVW5leHRuA2FlbQIxMQBzcnRjBmFwcF9pZBAyMjIwMzkxNzg4MjAwODkyAAEeUiIqsq3KlldtpCBuGgq0suSiS_fXqekWiX-1VCenKP41ADT7E7ifxciyGC0_aem_LN5ZLCzOA2IJ_FRyAQFfYA)) (Triple Ale) 
