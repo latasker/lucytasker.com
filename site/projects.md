@@ -16,7 +16,7 @@ Recording collabs:
 * [Siwan Catherine](https://siwancatrin.bandcamp.com/album/possibility) (Recording on Siwan's debut album) 
 * [The Rigmarollers](https://therigmarollers.bandcamp.com/album/21st-century-speakeasy) (featured on tracks 4, 8, 10)
 * [For Breakfast](https://forbreakfast.bandcamp.com/album/longer-than-spring) (For Breakfast Band)
-* [Gilles Snowcat](https://www.youtube.com/watch?v=POZdUCJsfOg) 
+* [Gilles Snowcat](https://www.youtube.com/watch?v=POZdUCJsfOg) (Recording on album: Don't Leave Your Mistakes Unattended)
 
 TV:
 * [Dream of Europe](https://www.youtube.com/watch?v=iRnvrYf8xAQ) (London Part 1 At Abbey Road Studios) 
