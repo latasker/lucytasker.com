@@ -3,7 +3,7 @@ Browse Lucy's present and past projects/collaborations here:
 Projects: 
 * [Lucy Tasker and Clément Cerovecki](https://clemandlucy.bandcamp.com/album/valise) (Sounds inspired by Eastern Europe)
 * [Raka Band](https://www.youtube.com/watch?v=xFRCfKUk8IM&list=RDxFRCfKUk8IM&start_radio=1) (Balkan Music)
-* [Lucy Tasker Trio](https://www.youtube.com/watch?v=Hs_f5nKmGF8) (gypsy jazz/manouche/swing) 
+* [Lucy Tasker Trio](https://www.youtube.com/watch?v=Hs_f5nKmGF8)(gypsy jazz/manouche/swing) 
 * [Namlo](https://www.youtube.com/watch?v=bEkkmyhkJSM&list=RDbEkkmyhkJSM&start_radio=1) (Nepalese fusion)
 * [Mudita](https://www.youtube.com/watch?v=TottX0kxuzI&list=RDTottX0kxuzI&start_radio=1) (Indian fusion)
 * [Triple Ale](https://www.youtube.com/watch?v=i6ckDrVShl0&list=RDi6ckDrVShl0&start_radio=1)(Fun female trio). 
