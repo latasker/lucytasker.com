@@ -13,11 +13,12 @@ Projects:
 
 Recording collabs:
 * [Kurdish Folk](https://www.youtube.com/watch?v=SXk2DWxhwrk&list=RDSXk2DWxhwrk&start_radio=1) (collaboration with Kawa Bahrami)
-* [Faarjam Saidi](https://www.youtube.com/watch?v=_Wh03GtU7jE) (Collaboration with Faarjam Saidi, Iranian artist)
+* [Faarjam Saidi](https://www.youtube.com/watch?v=_Wh03GtU7jE) (Tenor sax collaboration with Faarjam Saidi, Iranian artist)
 * [Siwan Catherine](https://siwancatrin.bandcamp.com/album/possibility) (Recording on Siwan's debut album) 
 * [The Rigmarollers](https://therigmarollers.bandcamp.com/album/21st-century-speakeasy) (featured on tracks 4, 8, 10)
 * [For Breakfast](https://forbreakfast.bandcamp.com/album/longer-than-spring) (For Breakfast Band)
 * [Gilles Snowcat](https://www.youtube.com/watch?v=POZdUCJsfOg) (Recording on album: Don't Leave Your Mistakes Unattended)
+* [Sigma](https://www.youtube.com/watch?v=6tZqVP6JwxU&list=RD6tZqVP6JwxU&start_radio=1) (Tenor Sax)
 
 TV:
 * [Dream of Europe](https://www.youtube.com/watch?v=iRnvrYf8xAQ) (London Part 1 At Abbey Road Studios) 
