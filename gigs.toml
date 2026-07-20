@@ -35,14 +35,14 @@
 #   '''
 
 [[gigs]]
- date = "27/08/2026 - 31/08/2026"
- venue = "Edinburgh Festival  
+ date = "27/08/2026"
+ venue = "Edinburgh Festival"
  location = "Edinburgh" 
  description = "Bubble Schmeisis."
 
 [[gigs]]
  date = "23/08/2026"
- venue = "Ferme du Biéreau, 
+ venue = "Ferme du Biéreau"
  location = "Louvain (la neuve)"
  description = "Araponga Band."
 
@@ -51,12 +51,6 @@
  venue = "On Board (Board game café)" 
  location = "Vilvorde" 
  description = "Duet with Aline Saprinadou."
-
-[[gigs]]
- date = "31/07/2026"
- venue = "Somewhere on the Main Square (Marciac Jazz Festival)" 
- location = "Marciac, France" 
- description = "with Sister Georges (Brassens in jazz)."
 
 [[gigs]]
  date = "31/07/2026"
