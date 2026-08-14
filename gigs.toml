@@ -47,6 +47,12 @@
  description = "Araponga Band."
 
 [[gigs]]
+ date = "16/08/2026"
+ venue = "Casco Bar" 
+ location = "Brussels" 
+ description = "Alice River Band."
+
+[[gigs]]
  date = "15/08/2026"
  venue = "On Board (Board game café)" 
  location = "Vilvorde" 
